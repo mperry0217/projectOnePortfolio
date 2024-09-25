@@ -1,7 +1,127 @@
 *{
-
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    
+ font-family: 'Figtree', sans-serif;
+ background-color:rgb(201, 227, 255);
+}
+
+#daisy, #bioPic {
+    width: 50%;
+}
+/* temporary */
+
+#landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+
+/* why wrong effect???? */
+
+h1 {
+    font-family: 'Playpen Sans', Helvetica, sans-serif;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttons a {
+    background-color: rgb(77, 77, 127); /* wheres the bg??? */
+    color: white;
+    border-radius: 20px;
+	transition: all 0.3s;
+&:hover {
+    background-color: white;
+    color: rgb(77, 77, 127);
+}
+&.shadow:hover {
+    box-shadow: 0 0 30px rgba(77,77,127,0.5);
+}
+}
+
+/* inspo Kai Siversky on Codepen */
+
+footer {
+    position: relative;
+    background-color: rgb(77, 77, 127);
+    padding: 50px;
+    text-align: center;
+}
+
+/* how to get it to stick to the bottom? */
+
+footer p {
+    color:white;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(77, 77, 127);
+    color: white;
+}
+
+nav a:link,
+nav a:visited {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playpen Sans', san-serif;
+}
+
+#note {
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction:row;
+}
+
+#note ul {
+    flex-direction: column;
+}
+
+#note img {
+    width: 20%;
+}
+
+/* it wont make the list column and the image row */
+
+.small {
+    width: 50%;
+}
+
+#idealSpots {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playpen Sans', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 75px;
+}
+
+#exampleOptions {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#exampleOptions img {
+    width:100%;
+}
+
+#exampleOptions dt {
+    padding-top: 20px;
 }
