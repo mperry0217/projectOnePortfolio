@@ -10,14 +10,15 @@ body{
 
 #daisy, #bioPic {
     width: 50%;
+    /* background-color:white; */
 }
-/* temporary */
+
 
 #landing {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
     margin: 100px;
 }
 
@@ -26,13 +27,28 @@ body{
 h1 {
     font-family: 'Playpen Sans', Helvetica, sans-serif;
     padding: 20px;
+    font-size: 3em;
 }
 
 a {
     text-decoration: none;
 }
 
-.buttons a {
+.buttons {
+    /* background-color: rgb(77, 77, 127); */
+    align-self: center;
+    text-align: center;
+}
+
+.buttons a:link,
+.buttons a:visited {
+    color:white;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.buttons div {
     background-color: rgb(77, 77, 127); /* wheres the bg??? */
     color: white;
     border-radius: 20px;
@@ -47,6 +63,7 @@ a {
 }
 
 /* inspo Kai Siversky on Codepen */
+/* https://codepen.io/siversky/details/bGPgEwN */
 
 footer {
     position: relative;
@@ -67,6 +84,7 @@ nav {
     justify-content: space-evenly;
     background-color: rgb(77, 77, 127);
     color: white;
+    font-weight: 900;
 }
 
 nav a:link,
@@ -94,7 +112,7 @@ nav a:visited {
 
 /* it wont make the list column and the image row */
 
-.small {
+.medium {
     width: 50%;
 }
 
@@ -124,4 +142,31 @@ h2 {
 
 #exampleOptions dt {
     padding-top: 20px;
+}
+
+.bio, .inspo h2, .inspo p  {
+    width: 75%;
+    margin: auto;
+}
+
+#bioPic {
+    margin-bottom: 30px;
+}
+
+.bio p {
+    line-height: 2em;
+    margin-bottom: 50px;
+}
+
+.small {
+    width: 5em;
+    margin-left: 10%
+}
+
+.large {
+    width: 100%;
+}
+
+.smaller {
+    width: 3.5em;
 }
